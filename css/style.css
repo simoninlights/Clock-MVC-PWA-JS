@@ -1,0 +1,60 @@
+:root {
+  --primary-color: #0D0D0D;
+  --element-color: #F2CB07;
+  --background-color: #b3afa7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Pixelify Sans', sans-serif ;
+}
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+}
+
+.main {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1rem;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  padding: 3rem;
+}
+.clock-display {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  color: var(--element-color);
+}
+
+.clock__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+  font-size: 2.5rem;
+  color: var(--element-color);
+}
+
+.clock__buttons button {
+  text-transform: uppercase;
+}
