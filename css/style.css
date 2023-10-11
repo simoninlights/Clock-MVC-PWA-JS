@@ -23,9 +23,42 @@ body {
   min-height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 3rem;
 }
+
+
+/* Hand Clock */
+.visual-clock__container {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid var(--primary-color);
+  border-radius: 50%;
+  position: relative;
+ padding: 1rem;
+}
+.visual-clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.visual-clock-hand {
+  width: 50%;
+  height: 6px;
+  background-color: var(--element-color);
+  position: absolute;
+  top: 50%;
+}
+.visual-clock-hour-hand {
+}
+.visual-clock-min-hand {
+}
+.visual-clock-second-hand {
+}
+
+/* Digital Clock */
 .clock__container {
   display: flex;
   flex-direction: column;
